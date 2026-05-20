@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from pypdf import PdfReader
 import json
+import time
 from agents import agent_1_extractor, agent_2_backlog_creator, agent_3_sprint_planner
 
 # Configuração da página
@@ -33,9 +34,13 @@ with st.sidebar:
             # 2. Correr a Pipeline de Agentes
             with st.spinner("Agent 1 is analyzing requirements & dependencies..."):
                 st.session_state['reqs'] = agent_1_extractor(project_text)
+
+            time.sleep(15)
                 
             with st.spinner("Agent 2 is creating Epics & Tasks (Story Points)..."):
                 st.session_state['backlog'] = agent_2_backlog_creator(st.session_state['reqs'])
+
+            time.sleep(15)
                 
             with st.spinner("Agent 3 is planning Sprints & assigning team..."):
                 # Abrir com UTF-8 para evitar problemas com acentos nos nomes (ex: João, Inês)
