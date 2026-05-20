@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 
-from scrum_agent.core.models import Allocation, BacklogItem, Project, Risk, TeamMember
+from scrum_agent.core.models import Allocation, BacklogItem, Insight, Project, Risk, TeamMember
 
 
 def generate_risks(
@@ -64,30 +64,30 @@ def generate_risks(
     return risks
 
 
-def build_insights(projects: list[Project], allocations: list[Allocation], risks: list[Risk]) -> list[dict]:
+def build_insights(projects: list[Project], allocations: list[Allocation], risks: list[Risk]) -> list[Insight]:
     critical_risks = [risk for risk in risks if risk.severity == "critical"]
     high_risks = [risk for risk in risks if risk.severity == "high"]
     project_count = len(projects)
     allocation_count = len(allocations)
     return [
-        {
-            "title": "Start with alignment, not coding",
-            "description": (
+        Insight(
+            title="Start with alignment, not coding",
+            description=(
                 "The first sprint should lock rules, data dependencies, and compliance assumptions "
                 "before backend or model-heavy work accelerates."
             ),
-            "impact": "Reduces rework across all three concurrent projects.",
-        },
-        {
-            "title": "Use explainable allocation",
-            "description": f"{allocation_count} backlog items were assigned using skill, domain, seniority, and capacity signals.",
-            "impact": "Makes Scrum Master decisions easy to defend in the technical pitch.",
-        },
-        {
-            "title": "Escalate critical planning risk",
-            "description": f"{len(critical_risks)} critical and {len(high_risks)} high risks were detected across {project_count} projects.",
-            "impact": "Keeps the strategic pitch focused on delivery predictability and risk control.",
-        },
+            impact="Reduces rework across all three concurrent projects.",
+        ),
+        Insight(
+            title="Use explainable allocation",
+            description=f"{allocation_count} backlog items were assigned using skill, domain, seniority, and capacity signals.",
+            impact="Makes Scrum Master decisions easy to defend in the technical pitch.",
+        ),
+        Insight(
+            title="Escalate critical planning risk",
+            description=f"{len(critical_risks)} critical and {len(high_risks)} high risks were detected across {project_count} projects.",
+            impact="Keeps the strategic pitch focused on delivery predictability and risk control.",
+        ),
     ]
 
 

@@ -101,6 +101,13 @@ class Risk:
     owner_suggestion: str
 
 
+@dataclass
+class Insight:
+    title: str
+    description: str
+    impact: str
+
+
 def to_dict(value: Any) -> Any:
     """Recursively serialize dataclasses into plain Python containers."""
     if is_dataclass(value):
