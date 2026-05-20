@@ -1,17 +1,24 @@
 import google.generativeai as genai
 import json
 
-# AQUI DEVES COLOCAR A TUA API KEY
-genai.configure(api_key="AIzaSyBa3AAlFcTri7sfkBF7mYSvjCTbnkTjVCs")
+# =====================================================================
+# 🔑 CONFIGURAÇÃO DAS API KEYS DA EQUIPA
+# Substituam pelas chaves geradas em 3 contas Google diferentes
+# =====================================================================
+API_KEY_AGENT_1 = "AIzaSyBa3AAlFcTri7sfkBF7mYSvjCTbnkTjVCs"
+API_KEY_AGENT_2 = "AIzaSyA6Q4o0wA9FUG88M4lg_-uq28AOcCBvS2I"
+API_KEY_AGENT_3 = "AIzaSyBQrN43247_eLi3oluuUirRW1-M-2ELvjE"
 
-# Configuração crítica: Força o modelo a responder APENAS em JSON estruturado
-model = genai.GenerativeModel(
-    'gemini-2.5-flash',
-    generation_config={"response_mime_type": "application/json"}
-)
+# Configuração partilhada para forçar output em JSON seguro
+shared_config = {"response_mime_type": "application/json"}
 
 def agent_1_extractor(project_text):
     """Agente 1: Analisa o PDF e extrai o núcleo de negócio."""
+    
+    # 1. Ativa a chave específica deste agente
+    genai.configure(api_key=API_KEY_AGENT_1)
+    model = genai.GenerativeModel('gemini-2.5-flash', generation_config=shared_config)
+    
     prompt = f"""
     Analyze this project document. Extract the main objectives, milestones, deadlines, and explicitly list dependencies.
     Return ONLY a valid JSON object with this exact structure:
@@ -28,6 +35,11 @@ def agent_1_extractor(project_text):
 
 def agent_2_backlog_creator(requirements_json):
     """Agente 2: Transforma requisitos em Epics e Tasks com Story Points."""
+    
+    # 2. Muda para a chave do segundo membro da equipa
+    genai.configure(api_key=API_KEY_AGENT_2)
+    model = genai.GenerativeModel('gemini-2.5-flash', generation_config=shared_config)
+    
     prompt = f"""
     Based on the following project requirements, create a comprehensive Scrum Backlog.
     Break it down into logical Epics and specific Tasks.
@@ -45,6 +57,11 @@ def agent_2_backlog_creator(requirements_json):
 
 def agent_3_sprint_planner(backlog_json, team_profiles_text, project_dependencies, human_feedback="", current_plan=""):
     """Agente 3: Planeia cronologicamente e faz match de competências."""
+    
+    # 3. Muda para a chave do terceiro membro para a cartada final
+    genai.configure(api_key=API_KEY_AGENT_3)
+    model = genai.GenerativeModel('gemini-2.5-flash', generation_config=shared_config)
+    
     prompt = f"""
     You are an expert Scrum Master AI. Your job is to plan Sprints (e.g., Sprint 1, Sprint 2) chronologically.
     
