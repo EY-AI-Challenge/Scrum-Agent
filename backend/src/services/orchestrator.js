@@ -2,6 +2,7 @@ import { buildPortfolioPrompt, buildSingleProjectPrompt } from "./promptBuilder.
 import { callOpenRouter, getConfiguredModel } from "./openrouterClient.js";
 import { parseModelJsonResponse } from "../utils/jsonParser.js";
 import { getMockPortfolioResponse, getMockSingleProjectResponse } from "../mock/mockResponses.js";
+import { logEvent } from "../utils/logger.js";
 
 function extractTotalWeeksFromText(text = "") {
   const weekMatches = [...text.matchAll(/\bWeek\s+(\d+)\b/gi)].map((match) => Number(match[1]));
@@ -54,9 +55,19 @@ export async function generateScrumPlan(payload) {
   const mode = projects.length === 1 ? "single_project" : "portfolio";
   const model = getConfiguredModel();
 
+  logEvent("Orchestrator", "generateScrumPlan start", {
+    mode,
+    projects: projects.length,
+    team_members: teamMembers.length,
+    options,
+    model,
+    use_mock_ai: process.env.USE_MOCK_AI === "true"
+  });
+
   let data;
 
   if (process.env.USE_MOCK_AI === "true") {
+    logEvent("Orchestrator", "using mock AI response", { mode });
     data = mode === "single_project"
       ? getMockSingleProjectResponse(projects[0], teamMembers, options)
       : getMockPortfolioResponse(projects, teamMembers, options);
@@ -65,8 +76,18 @@ export async function generateScrumPlan(payload) {
       ? buildSingleProjectPrompt(projects, teamMembers, options)
       : buildPortfolioPrompt(projects, teamMembers, options);
 
+    logEvent("Orchestrator", "prompt built", {
+      mode,
+      prompt_length: prompt.length
+    });
+
     const rawModelText = await callOpenRouter(prompt);
     data = parseModelJsonResponse(rawModelText);
+
+    logEvent("Orchestrator", "model response parsed", {
+      parse_error: Boolean(data?.parse_error),
+      keys: Object.keys(data || {})
+    });
   }
 
   return {

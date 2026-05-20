@@ -1,4 +1,5 @@
 import { PDFParse } from "pdf-parse";
+import { logEvent } from "../utils/logger.js";
 
 const DEFAULT_SKILLS = [
   "Agile", "Scrum", "Roadmap", "Stakeholder Management", "BPMN", "User Stories",
@@ -145,7 +146,18 @@ export function parseProjectPdfText(rawText, fileName, index) {
   const text = cleanPdfText(rawText);
   const standardStructure = isStandardProjectPdf(text);
 
+  logEvent("DocumentParser", "project PDF parsed", {
+    fileName,
+    index,
+    text_length: text.length,
+    standard_structure: standardStructure
+  });
+
   if (!standardStructure) {
+    logEvent("DocumentParser", "project PDF treated as unstructured", {
+      fileName,
+      index
+    });
     return {
       id: `project_${index + 1}`,
       name: fileName.replace(/\.pdf$/i, ""),
@@ -173,6 +185,19 @@ export function parseProjectPdfText(rawText, fileName, index) {
   const milestones = parseMilestones(extractSection(text, "Milestones", headings.filter((heading) => heading !== "Milestones")));
   const dependencies = parseListSection(extractSection(text, "Dependencies", ["Team Profiles", "Core Roles"]));
   const teamProfiles = extractSection(text, "Team Profiles", []);
+
+  logEvent("DocumentParser", "project PDF sections extracted", {
+    fileName,
+    index,
+    objective_length: objective.length,
+    description_length: description.length,
+    requirements_count: requirements.length,
+    deadlines_count: deadlines.length,
+    milestones_count: milestones.length,
+    dependencies_count: dependencies.length,
+    team_profiles_length: teamProfiles.length,
+    required_roles_count: parseRequiredRoles(teamProfiles).length
+  });
 
   return {
     id: `project_${index + 1}`,
@@ -244,6 +269,15 @@ export async function parseUploadedPlanningFiles(files) {
   const projectFiles = files?.project_pdfs || [];
   const teamFile = files?.team_file?.[0];
 
+  logEvent("DocumentParser", "upload received", {
+    project_files: projectFiles.map((file) => ({
+      name: file.originalname,
+      size: file.size,
+      mimetype: file.mimetype
+    })),
+    has_team_file: Boolean(teamFile)
+  });
+
   const projects = await Promise.all(projectFiles.map(async (file, index) => {
     const rawText = await extractTextFromPdfBuffer(file.buffer);
     return parseProjectPdfText(rawText, file.originalname, index);
@@ -251,6 +285,16 @@ export async function parseUploadedPlanningFiles(files) {
 
   const teamText = teamFile ? teamFile.buffer.toString("utf8") : "";
   const teamMembers = teamText ? parseTeamMembersText(teamText) : [];
+
+  logEvent("DocumentParser", "team file parsed", {
+    team_text_length: teamText.length,
+    team_members: teamMembers.length
+  });
+
+  logEvent("DocumentParser", "upload parsing complete", {
+    projects: projects.length,
+    team_members: teamMembers.length
+  });
 
   return {
     projects,

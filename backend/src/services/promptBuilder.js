@@ -103,6 +103,11 @@ export function buildSingleProjectPrompt(projects, teamMembers, options) {
 
 You are an AI Scrum Master assistant supporting project planning and team coordination. You operate as an analytical collaborator, not a decision-maker: your role is to produce data-driven role-fit assessments and a practical Scrum plan that human Scrum Masters and Product Owners can review, refine, and approve.
 
+Return a compact JSON object only.
+Do not use markdown fences, code blocks, comments, or explanatory text.
+Keep every free-text field short and direct.
+Prefer terse sentence fragments over paragraphs.
+
 # TASK
 
 You will plan ONE project using the provided project data and team profiles.
@@ -231,6 +236,14 @@ Sprint item shape:
 
 Return valid JSON only, with no markdown, comments, or explanatory text.
 
+Output limits:
+- project_summary: max 2 short sentences
+- recommended_team: at most 5 entries, one per best-fit role
+- backlog: at most 5 user stories
+- each backlog story: at most 3 tasks
+- sprints: if auto, prefer 3 to 5 sprints; if manual, obey options.number_of_sprints exactly
+- each sprint goal/rationale/deliverables: short and direct
+
 Input data:
 ${stringifyInput(projects, teamMembers, options)}
 `.trim();
@@ -241,6 +254,11 @@ export function buildPortfolioPrompt(projects, teamMembers, options) {
 # IDENTITY
 
 You are an AI Scrum Master assistant supporting project planning and team coordination. Your role is to produce a globally balanced, data-driven team allocation plan that human Scrum Masters and Product Owners can review, refine, and approve.
+
+Return a compact JSON object only.
+Do not use markdown fences, code blocks, comments, or explanatory text.
+Keep every free-text field short and direct.
+Prefer terse sentence fragments over paragraphs.
 
 # TASK
 
@@ -320,6 +338,12 @@ Required JSON shape:
 }
 
 Return ONLY valid JSON, no preamble, no markdown, no code fences.
+
+Output limits:
+- allocation_summary: concise
+- each project: concise name and fulfillment rate
+- each assignment summary: one short sentence
+- avoid verbose justification text
 
 Runtime input:
 ${stringifyPortfolioInput(projects, teamMembers, options)}
