@@ -1,0 +1,1841 @@
+{
+  "projects": [
+    {
+      "project_id": "P1",
+      "name": "Digital Loan Approval System",
+      "domain": "fintech",
+      "mvp_week": 9,
+      "final_week": 12,
+      "objective": "Design and implement a fully digital loan approval platform.",
+      "summary": "Automate personal loan applications, credit risk assessment, approval recommendations, loan officer review, real-time status tracking, and auditability.",
+      "requirements": [
+        "Allow customers to submit loan applications online",
+        "Automatically assess credit risk using predefined criteria",
+        "Generate approval or rejection recommendations",
+        "Provide a dashboard for loan officers to review applications",
+        "Track application status in real time",
+        "Ensure compliance with regulatory requirements and audit logs"
+      ],
+      "deadlines": {
+        "MVP Delivery": "Week 9",
+        "Internal Demo": "Week 12"
+      },
+      "milestones": [
+        "Week 1: Stakeholder alignment and requirement validation",
+        "Weeks 2-4: System architecture and data model design",
+        "Weeks 4-9: Backend development for application processing",
+        "Weeks 8-9: Risk assessment logic implementation",
+        "Weeks 8-9: Frontend dashboard development",
+        "Weeks 10-11: System integration",
+        "Weeks 8-12: Testing, compliance checks, and bug fixing",
+        "Week 12: Final delivery"
+      ],
+      "dependencies": [
+        "Risk assessment depends on defined business rules",
+        "Dashboard depends on backend APIs",
+        "Approval workflow depends on integration of all components"
+      ],
+      "source_file": "/home/jpborie/Scrum-Agent/Scrum_Data/Project1.pdf",
+      "source_status": "pdf_loaded",
+      "raw_text_excerpt": "Project: Digital Loan Approval System Objective The objective of this project is to design and implement a fully digital loan approval platform that significantly reduces the time required to process personal loan applications while ensuring consistent and compliant decision-making. The system should improve operational efficiency by automating repetitive and manual tasks currently performed by loan officers, such as data validation, credit assessment, and eligibility checks. At the same time, it must maintain a high level of accuracy and transparency in decision-making to comply with financial regulations and internal audit requirements. Additionally, the solution should enhance customer experience by providing faster feedback, real-time application tracking, and a seamless digital journey from application submission to final decision. Description Currently, the loan approval process re"
+    },
+    {
+      "project_id": "P2",
+      "name": "Smart Inventory & Replenishment System",
+      "domain": "retail",
+      "mvp_week": 15,
+      "final_week": 20,
+      "objective": "Develop an intelligent inventory management and replenishment system.",
+      "summary": "Forecast demand from historical sales, track inventory across stores, recommend replenishment, and alert managers about low stock or overstock.",
+      "requirements": [
+        "Track inventory levels across multiple stores",
+        "Predict product demand based on historical data",
+        "Generate restocking recommendations",
+        "Provide alerts for low stock or overstock situations",
+        "Dashboard for store managers and supply chain teams",
+        "Allow manual adjustments to recommendations"
+      ],
+      "deadlines": {
+        "MVP Delivery": "Week 15",
+        "Pilot Store Rollout": "Week 20"
+      },
+      "milestones": [
+        "Weeks 1-4: Data integration from inventory systems",
+        "Weeks 3-5: Data preprocessing and validation",
+        "Weeks 6-10: Demand forecasting model development",
+        "Weeks 9-12: Replenishment logic implementation",
+        "Weeks 13-15: Frontend dashboard development",
+        "Weeks 16-18: System integration",
+        "Weeks 18-19: Pilot rollout and testing",
+        "Week 20: Final delivery"
+      ],
+      "dependencies": [
+        "Forecasting depends on historical sales data",
+        "Recommendations depend on forecasting output",
+        "Dashboard depends on backend services"
+      ],
+      "source_file": "/home/jpborie/Scrum-Agent/Scrum_Data/Project2.pdf",
+      "source_status": "pdf_loaded",
+      "raw_text_excerpt": "Project: Smart Inventory & Replenishment System Objective The objective of this project is to develop an intelligent inventory management and replenishment system that enables retail operations to maintain optimal stock levels across multiple stores while minimizing both stockouts and overstock situations. The system should leverage historical sales data and predictive analytics to forecast demand and automate replenishment decisions. By doing so, it should improve product availability, reduce waste, and optimize supply chain efficiency. Additionally, the solution should empower store managers and supply chain teams with actionable insights and intuitive tools to monitor inventory performance and intervene when necessary. Description Retail businesses often struggle with balancing inventory levels due to fluctuating demand, seasonal trends, and limited visibility across stores. Overstock"
+    },
+    {
+      "project_id": "P3",
+      "name": "Patient Appointment & Triage Assistant",
+      "domain": "healthcare",
+      "mvp_week": 6,
+      "final_week": 16,
+      "objective": "Build a digital assistant for appointment scheduling and triage.",
+      "summary": "Collect symptoms, prioritize urgency, suggest care pathways, optimize appointment slots, and support healthcare staff with review dashboards.",
+      "requirements": [
+        "Allow patients to request appointments online",
+        "Collect and analyze patient symptoms",
+        "Automatically prioritize cases based on urgency",
+        "Suggest appropriate departments or specialists",
+        "Provide a scheduling interface for staff",
+        "Ensure data privacy and compliance such as GDPR"
+      ],
+      "deadlines": {
+        "MVP Delivery": "Week 6",
+        "Pilot Launch": "Week 3",
+        "Final Delivery": "Week 16"
+      },
+      "milestones": [
+        "Week 1: Requirements gathering and compliance validation",
+        "Week 2: Triage logic and decision rules definition",
+        "Weeks 3-8: Symptom classification development",
+        "Weeks 6-9: Scheduling system backend development",
+        "Weeks 8-10: Frontend interface development",
+        "Weeks 11-12: System integration",
+        "Weeks 8-13: Testing and validation",
+        "Weeks 14-15: Pilot deployment",
+        "Week 16: Final delivery"
+      ],
+      "dependencies": [
+        "Triage depends on symptom classification logic",
+        "Scheduling depends on resource availability data",
+        "System must comply with data privacy regulations"
+      ],
+      "source_file": "/home/jpborie/Scrum-Agent/Scrum_Data/Project3.pdf",
+      "source_status": "pdf_loaded",
+      "raw_text_excerpt": "Project: Patient Appointment & Triage Assistant Objective The objective of this project is to build a digital assistant that improves the efficiency and effectiveness of patient appointment scheduling and triage processes within healthcare organizations. The system should ensure that patients are directed to the appropriate care pathway based on the urgency and nature of their symptoms, while optimizing the allocation of medical resources such as doctors, specialists, and appointment slots. Additionally, the solution should enhance patient experience by reducing waiting times, improving access to care, and providing clear guidance throughout the appointment scheduling process, while strictly adhering to data privacy and healthcare regulations. Description Healthcare providers often face significant challenges in managing patient demand, particularly in distinguishing between urgent and n"
+    }
+  ],
+  "team_members": [
+    {
+      "member_id": "sofia-almeida",
+      "name": "Sofia Almeida",
+      "role": "Product Owner",
+      "summary": "Senior Product Manager with over 8 years of experience working across fintech and healthtech environments. She has led the development of digital lending platforms and patient-facing scheduling systems, giving her a strong understanding of both regulated financial products and user-centric healthcare solutions. Sofia is highly skilled in defining product vision, prioritizing features, and managing roadmaps aligned with business goals and tight deadlines. She is experienced in Agile methodologies, particularly Scrum, and excels at coordinating cross-functional teams. Her strengths include stakeholder management, decision-making under uncertainty, and ensuring that products deliver measurable value while maintaining a strong focus on user experience.",
+      "skills": [
+        "product_management",
+        "roadmap",
+        "prioritization",
+        "scrum",
+        "stakeholder_management"
+      ],
+      "domains": [
+        "fintech",
+        "healthcare",
+        "product",
+        "cross_domain"
+      ],
+      "experience_years": 8,
+      "seniority": 8,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "miguel-santos",
+      "name": "Miguel Santos",
+      "role": "Business Analyst",
+      "summary": "Business Analyst with 6 years of experience in banking and retail sectors. He has been involved in multiple digital transformation initiatives, focusing on translating complex business needs into clear and actionable functional requirements. Miguel is proficient in process modeling using BPMN, writing detailed user stories, and conducting gap analyses between current and future systems. He is particularly effective in facilitating communication between business stakeholders and technical teams, ensuring alignment and reducing ambiguity. His analytical mindset and structured approach make him a key contributor in early project phases.",
+      "skills": [
+        "business_analysis",
+        "requirements",
+        "user_stories",
+        "process_mapping",
+        "bpmn"
+      ],
+      "domains": [
+        "fintech",
+        "banking",
+        "retail"
+      ],
+      "experience_years": 6,
+      "seniority": 6,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "ana-costa",
+      "name": "Ana Costa",
+      "role": "Healthcare Business Analyst",
+      "summary": "Business Analyst specializing in healthcare systems, with 5 years of experience working on hospital and clinical platforms. She has deep knowledge of clinical workflows, patient journeys, and healthcare-specific requirements. Ana is experienced in documenting functional specifications and aligning them with both regulatory constraints and user needs. She also has a basic understanding of interoperability standards, which allows her to collaborate effectively on integration-heavy systems. Her main strength lies in bridging the gap between medical professionals and technical teams.",
+      "skills": [
+        "business_analysis",
+        "requirements",
+        "clinical_workflows",
+        "interoperability",
+        "healthcare"
+      ],
+      "domains": [
+        "healthcare"
+      ],
+      "experience_years": 5,
+      "seniority": 5,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "joao-ferreira",
+      "name": "João Ferreira",
+      "role": "Backend Developer",
+      "summary": "Backend Developer with 7 years of experience building secure and scalable systems in the financial sector. He has extensive experience using Java and Spring Boot to develop RESTful APIs and backend services. João is also well-versed in authentication and authorization mechanisms, including OAuth2, ensuring that applications meet strict security requirements. He is known for writing clean, maintainable code and for his ability to design robust architectures that handle high volumes of transactions reliably.",
+      "skills": [
+        "backend",
+        "api_design",
+        "java",
+        "spring_boot",
+        "oauth2",
+        "architecture",
+        "security"
+      ],
+      "domains": [
+        "fintech",
+        "backend"
+      ],
+      "experience_years": 7,
+      "seniority": 7,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "ines-martins",
+      "name": "Inês Martins",
+      "role": "Frontend Developer",
+      "summary": "Frontend Developer with 5 years of experience in SaaS platforms. She specializes in building modern web applications using React and TypeScript, with a focus on performance and usability. Inês has experience developing data-heavy dashboards and visualizations, making complex information easy to understand for users. She is detail-oriented and places strong emphasis on responsive design and smooth user interactions.",
+      "skills": [
+        "frontend",
+        "react",
+        "typescript",
+        "dashboard",
+        "data_visualization",
+        "ux"
+      ],
+      "domains": [
+        "saas",
+        "fintech",
+        "retail"
+      ],
+      "experience_years": 5,
+      "seniority": 5,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "carla-sousa",
+      "name": "Carla Sousa",
+      "role": "Frontend Developer",
+      "summary": "Frontend Developer with 4 years of experience in both web and mobile applications. She works primarily with Vue.js and has a strong understanding of responsive design and accessibility standards. Carla is passionate about creating intuitive user interfaces that provide a seamless experience across devices. She pays close attention to usability and ensures that applications are accessible to a wide range of users.",
+      "skills": [
+        "frontend",
+        "vue",
+        "accessibility",
+        "responsive_design",
+        "ux",
+        "patient_experience"
+      ],
+      "domains": [
+        "healthcare",
+        "web",
+        "mobile"
+      ],
+      "experience_years": 4,
+      "seniority": 4,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "tiago-fernandes",
+      "name": "Tiago Fernandes",
+      "role": "Data Scientist",
+      "summary": "Data Scientist with 7 years of experience in the banking sector. He specializes in developing risk models and credit scoring systems using statistical methods and machine learning techniques. Tiago is highly proficient in Python and libraries such as scikit-learn, and has a strong foundation in data analysis and predictive modeling. He is particularly skilled at translating business problems into data-driven solutions.",
+      "skills": [
+        "data_science",
+        "machine_learning",
+        "risk_modeling",
+        "credit_scoring",
+        "python"
+      ],
+      "domains": [
+        "fintech",
+        "banking"
+      ],
+      "experience_years": 7,
+      "seniority": 7,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "beatriz-gomes",
+      "name": "Beatriz Gomes",
+      "role": "Data Scientist",
+      "summary": "Data Scientist with 6 years of experience in retail analytics. She focuses on demand forecasting, time series analysis, and inventory optimization. Beatriz has worked on projects that aim to reduce stockouts and overstock situations by leveraging historical sales data. She is highly analytical and excels at identifying trends and patterns that can inform better business decisions.",
+      "skills": [
+        "data_science",
+        "forecasting",
+        "time_series",
+        "inventory",
+        "demand_planning"
+      ],
+      "domains": [
+        "retail",
+        "analytics"
+      ],
+      "experience_years": 6,
+      "seniority": 6,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "luis-teixeira",
+      "name": "Luís Teixeira",
+      "role": "Machine Learning Engineer",
+      "summary": "Machine Learning Engineer with 5 years of experience in healthtech. He has worked on projects involving natural language processing, particularly in the classification of patient symptoms. Luís is experienced in deploying machine learning models into production environments, using MLOps practices to ensure reliability and scalability. He bridges the gap between data science and engineering.",
+      "skills": [
+        "machine_learning",
+        "nlp",
+        "symptom_classification",
+        "mlops",
+        "python"
+      ],
+      "domains": [
+        "healthcare",
+        "healthtech"
+      ],
+      "experience_years": 5,
+      "seniority": 5,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "marta-carvalho",
+      "name": "Marta Carvalho",
+      "role": "Data Engineer",
+      "summary": "Data Engineer with 6 years of experience in retail environments. She specializes in building and maintaining ETL pipelines that process large volumes of data efficiently. Marta is experienced with tools such as Spark and works with both SQL and NoSQL databases. She ensures that data is clean, consistent, and readily available for analytics and machine learning purposes.",
+      "skills": [
+        "data_engineering",
+        "etl",
+        "spark",
+        "sql",
+        "nosql",
+        "data_quality"
+      ],
+      "domains": [
+        "retail",
+        "data"
+      ],
+      "experience_years": 6,
+      "seniority": 6,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "rita-marques",
+      "name": "Rita Marques",
+      "role": "UX/UI Designer",
+      "summary": "UX/UI Designer with 6 years of experience designing digital products. She is highly skilled in user-centered design methodologies and uses tools like Figma to create prototypes and design systems. Rita focuses on simplifying complex user journeys and ensuring that interfaces are intuitive and visually appealing. She often conducts usability testing to validate design decisions.",
+      "skills": [
+        "ux",
+        "ui_design",
+        "prototyping",
+        "usability_testing",
+        "design_system"
+      ],
+      "domains": [
+        "cross_domain",
+        "product"
+      ],
+      "experience_years": 6,
+      "seniority": 6,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "hugo-silva",
+      "name": "Hugo Silva",
+      "role": "DevOps Engineer",
+      "summary": "DevOps Engineer with 7 years of experience working in cloud-based environments. He has strong expertise in AWS and Azure, as well as in CI/CD pipelines, Docker, and Kubernetes. Hugo is responsible for automating deployment processes and ensuring that systems are scalable, reliable, and easy to maintain. He also implements monitoring solutions to quickly detect and resolve issues.",
+      "skills": [
+        "devops",
+        "aws",
+        "azure",
+        "ci_cd",
+        "docker",
+        "kubernetes",
+        "monitoring"
+      ],
+      "domains": [
+        "cloud",
+        "cross_domain"
+      ],
+      "experience_years": 7,
+      "seniority": 7,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "teresa-rocha",
+      "name": "Teresa Rocha",
+      "role": "Compliance Specialist",
+      "summary": "Compliance Specialist with 9 years of experience in the banking sector. She has in-depth knowledge of financial regulations, auditing processes, and data protection laws such as GDPR. Teresa ensures that systems and processes comply with regulatory requirements and helps mitigate risks related to non-compliance. She works closely with both business and technical teams.",
+      "skills": [
+        "compliance",
+        "gdpr",
+        "audit",
+        "regulatory",
+        "data_protection"
+      ],
+      "domains": [
+        "fintech",
+        "banking",
+        "healthcare"
+      ],
+      "experience_years": 9,
+      "seniority": 9,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "nuno-figueiredo",
+      "name": "Nuno Figueiredo",
+      "role": "Security Engineer",
+      "summary": "Security Engineer with 8 years of experience in cybersecurity. He specializes in protecting applications and data through encryption, identity and access management, and security testing. Nuno conducts vulnerability assessments and implements best practices to prevent security breaches. His work is critical in safeguarding sensitive information.",
+      "skills": [
+        "security",
+        "cybersecurity",
+        "encryption",
+        "iam",
+        "security_testing",
+        "data_protection"
+      ],
+      "domains": [
+        "fintech",
+        "healthcare"
+      ],
+      "experience_years": 8,
+      "seniority": 8,
+      "capacity_per_sprint": 8
+    },
+    {
+      "member_id": "dr-paulo-mendes",
+      "name": "Dr. Paulo Mendes",
+      "role": "Healthcare Specialist",
+      "summary": "Healthcare Specialist with 12 years of experience as a practicing physician and clinical manager. He has extensive knowledge of patient triage processes, clinical decision-making, and hospital operations. Paulo provides valuable insights into real-world healthcare practices and ensures that digital solutions align with medical standards and improve patient outcomes.",
+      "skills": [
+        "healthcare",
+        "triage",
+        "clinical_decision",
+        "hospital_operations",
+        "medical_validation"
+      ],
+      "domains": [
+        "healthcare"
+      ],
+      "experience_years": 12,
+      "seniority": 10,
+      "capacity_per_sprint": 8
+    }
+  ],
+  "backlog_items": [
+    {
+      "item_id": "P1-BL-001",
+      "project_id": "P1",
+      "epic": "Discovery and compliance",
+      "title": "Validate digital loan workflow and audit controls",
+      "description": "Map the current loan process, audit needs, and product scope for the MVP.",
+      "item_type": "user_story",
+      "required_skills": [
+        "business_analysis",
+        "requirements",
+        "compliance",
+        "audit",
+        "product_management"
+      ],
+      "priority_score": 100,
+      "priority": "critical",
+      "story_points": 3,
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Output is traceable to Digital Loan Approval System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 1,
+      "phase": "discovery",
+      "status": "todo",
+      "sprint_number": 1,
+      "sprint_id": "P1-S1"
+    },
+    {
+      "item_id": "P1-BL-002",
+      "project_id": "P1",
+      "epic": "Risk decisioning",
+      "title": "Define credit risk rules and decision criteria",
+      "description": "Create the approval, rejection, and manual review criteria used by the engine.",
+      "item_type": "task",
+      "required_skills": [
+        "risk_modeling",
+        "credit_scoring",
+        "compliance",
+        "business_analysis"
+      ],
+      "priority_score": 99,
+      "priority": "critical",
+      "story_points": 5,
+      "dependencies": [
+        "P1-BL-001"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Digital Loan Approval System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 1,
+      "phase": "rules",
+      "status": "todo",
+      "sprint_number": 1,
+      "sprint_id": "P1-S1"
+    },
+    {
+      "item_id": "P1-BL-003",
+      "project_id": "P1",
+      "epic": "Secure platform foundation",
+      "title": "Design secure application data model and API contract",
+      "description": "Define loan application entities, secure fields, and API contracts for the MVP.",
+      "item_type": "task",
+      "required_skills": [
+        "backend",
+        "api_design",
+        "security",
+        "data_protection",
+        "architecture"
+      ],
+      "priority_score": 89,
+      "priority": "critical",
+      "story_points": 5,
+      "dependencies": [
+        "P1-BL-001"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Digital Loan Approval System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 2,
+      "phase": "architecture",
+      "status": "todo",
+      "sprint_number": 2,
+      "sprint_id": "P1-S2"
+    },
+    {
+      "item_id": "P1-BL-004",
+      "project_id": "P1",
+      "epic": "Application processing",
+      "title": "Build digital loan application intake API",
+      "description": "Implement the backend path for receiving and validating customer loan applications.",
+      "item_type": "user_story",
+      "required_skills": [
+        "backend",
+        "api_design",
+        "security",
+        "oauth2"
+      ],
+      "priority_score": 81,
+      "priority": "high",
+      "story_points": 8,
+      "dependencies": [
+        "P1-BL-003"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Digital Loan Approval System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 2,
+      "phase": "backend",
+      "status": "todo",
+      "sprint_number": 2,
+      "sprint_id": "P1-S2"
+    },
+    {
+      "item_id": "P1-BL-005",
+      "project_id": "P1",
+      "epic": "Risk decisioning",
+      "title": "Build credit risk scoring and recommendation flow",
+      "description": "Apply credit rules and generate approval, rejection, or manual review recommendations.",
+      "item_type": "user_story",
+      "required_skills": [
+        "risk_modeling",
+        "credit_scoring",
+        "data_science",
+        "backend"
+      ],
+      "priority_score": 76,
+      "priority": "high",
+      "story_points": 8,
+      "dependencies": [
+        "P1-BL-002",
+        "P1-BL-004"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Digital Loan Approval System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 2,
+      "phase": "decisioning",
+      "status": "todo",
+      "sprint_number": 2,
+      "sprint_id": "P1-S2"
+    },
+    {
+      "item_id": "P1-BL-006",
+      "project_id": "P1",
+      "epic": "Loan officer experience",
+      "title": "Create loan officer dashboard data contract",
+      "description": "Expose the application status, risk score, and supporting data needed by the dashboard.",
+      "item_type": "task",
+      "required_skills": [
+        "frontend",
+        "dashboard",
+        "data_visualization",
+        "backend"
+      ],
+      "priority_score": 66,
+      "priority": "high",
+      "story_points": 5,
+      "dependencies": [
+        "P1-BL-004",
+        "P1-BL-005"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Digital Loan Approval System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 4,
+      "phase": "frontend",
+      "status": "todo",
+      "sprint_number": 4,
+      "sprint_id": "P1-S4"
+    },
+    {
+      "item_id": "P1-BL-007",
+      "project_id": "P1",
+      "epic": "Compliance and oversight",
+      "title": "Implement audit log and manual override workflow",
+      "description": "Capture decision traceability and allow loan officers to override automated decisions.",
+      "item_type": "user_story",
+      "required_skills": [
+        "compliance",
+        "audit",
+        "backend",
+        "security",
+        "regulatory"
+      ],
+      "priority_score": 91,
+      "priority": "critical",
+      "story_points": 5,
+      "dependencies": [
+        "P1-BL-005"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Digital Loan Approval System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 3,
+      "phase": "compliance",
+      "status": "todo",
+      "sprint_number": 3,
+      "sprint_id": "P1-S3"
+    },
+    {
+      "item_id": "P2-BL-001",
+      "project_id": "P2",
+      "epic": "Inventory discovery",
+      "title": "Map inventory data sources and store processes",
+      "description": "Identify source systems, product hierarchies, store workflows, and replenishment constraints.",
+      "item_type": "task",
+      "required_skills": [
+        "business_analysis",
+        "retail",
+        "data_engineering",
+        "requirements"
+      ],
+      "priority_score": 68,
+      "priority": "high",
+      "story_points": 3,
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Output is traceable to Smart Inventory & Replenishment System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 1,
+      "phase": "discovery",
+      "status": "todo",
+      "sprint_number": 1,
+      "sprint_id": "P2-S1"
+    },
+    {
+      "item_id": "P2-BL-002",
+      "project_id": "P2",
+      "epic": "Data foundation",
+      "title": "Build inventory ingestion and validation pipeline",
+      "description": "Load store inventory and sales history, then validate quality for forecasting use.",
+      "item_type": "user_story",
+      "required_skills": [
+        "data_engineering",
+        "etl",
+        "data_quality",
+        "sql",
+        "retail"
+      ],
+      "priority_score": 74,
+      "priority": "high",
+      "story_points": 8,
+      "dependencies": [
+        "P2-BL-001"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Smart Inventory & Replenishment System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 2,
+      "phase": "data",
+      "status": "todo",
+      "sprint_number": 2,
+      "sprint_id": "P2-S2"
+    },
+    {
+      "item_id": "P2-BL-003",
+      "project_id": "P2",
+      "epic": "Demand intelligence",
+      "title": "Develop baseline demand forecast model",
+      "description": "Create a deterministic baseline forecast using historical sales and seasonality signals.",
+      "item_type": "user_story",
+      "required_skills": [
+        "forecasting",
+        "time_series",
+        "data_science",
+        "machine_learning",
+        "demand_planning"
+      ],
+      "priority_score": 66,
+      "priority": "high",
+      "story_points": 8,
+      "dependencies": [
+        "P2-BL-002"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Smart Inventory & Replenishment System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 2,
+      "phase": "modeling",
+      "status": "todo",
+      "sprint_number": 2,
+      "sprint_id": "P2-S2"
+    },
+    {
+      "item_id": "P2-BL-004",
+      "project_id": "P2",
+      "epic": "Replenishment decisions",
+      "title": "Implement replenishment recommendation rules",
+      "description": "Turn forecast output into reorder recommendations using lead times and stock policies.",
+      "item_type": "user_story",
+      "required_skills": [
+        "forecasting",
+        "demand_planning",
+        "backend",
+        "inventory"
+      ],
+      "priority_score": 66,
+      "priority": "high",
+      "story_points": 8,
+      "dependencies": [
+        "P2-BL-003"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Smart Inventory & Replenishment System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 3,
+      "phase": "decisioning",
+      "status": "todo",
+      "sprint_number": 3,
+      "sprint_id": "P2-S3"
+    },
+    {
+      "item_id": "P2-BL-005",
+      "project_id": "P2",
+      "epic": "Operations dashboard",
+      "title": "Build low stock and overstock alert rules",
+      "description": "Surface critical stock exceptions for store managers and supply chain teams.",
+      "item_type": "task",
+      "required_skills": [
+        "dashboard",
+        "data_visualization",
+        "retail",
+        "frontend"
+      ],
+      "priority_score": 56,
+      "priority": "medium",
+      "story_points": 5,
+      "dependencies": [
+        "P2-BL-004"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Smart Inventory & Replenishment System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 3,
+      "phase": "frontend",
+      "status": "todo",
+      "sprint_number": 3,
+      "sprint_id": "P2-S3"
+    },
+    {
+      "item_id": "P2-BL-006",
+      "project_id": "P2",
+      "epic": "Operations dashboard",
+      "title": "Design manager dashboard metrics and manual override flow",
+      "description": "Define KPIs and interaction flow for accepting or adjusting replenishment suggestions.",
+      "item_type": "user_story",
+      "required_skills": [
+        "ux",
+        "ui_design",
+        "frontend",
+        "dashboard",
+        "retail"
+      ],
+      "priority_score": 56,
+      "priority": "medium",
+      "story_points": 5,
+      "dependencies": [
+        "P2-BL-004"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Smart Inventory & Replenishment System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 4,
+      "phase": "frontend",
+      "status": "todo",
+      "sprint_number": 4,
+      "sprint_id": "P2-S4"
+    },
+    {
+      "item_id": "P2-BL-007",
+      "project_id": "P2",
+      "epic": "Supply chain constraints",
+      "title": "Account for supplier lead times and warehouse constraints",
+      "description": "Represent supplier lead times, delivery schedules, and warehouse limits in recommendations.",
+      "item_type": "task",
+      "required_skills": [
+        "business_analysis",
+        "inventory",
+        "backend",
+        "requirements"
+      ],
+      "priority_score": 46,
+      "priority": "medium",
+      "story_points": 5,
+      "dependencies": [
+        "P2-BL-004"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Smart Inventory & Replenishment System requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 4,
+      "phase": "constraints",
+      "status": "todo",
+      "sprint_number": 4,
+      "sprint_id": "P2-S4"
+    },
+    {
+      "item_id": "P3-BL-001",
+      "project_id": "P3",
+      "epic": "Clinical and privacy discovery",
+      "title": "Validate triage workflow and privacy constraints",
+      "description": "Map clinical workflows and validate GDPR-sensitive data handling before delivery work.",
+      "item_type": "task",
+      "required_skills": [
+        "healthcare",
+        "clinical_workflows",
+        "business_analysis",
+        "compliance",
+        "gdpr"
+      ],
+      "priority_score": 100,
+      "priority": "critical",
+      "story_points": 3,
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Output is traceable to Patient Appointment & Triage Assistant requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 1,
+      "phase": "discovery",
+      "status": "todo",
+      "sprint_number": 1,
+      "sprint_id": "P3-S1"
+    },
+    {
+      "item_id": "P3-BL-002",
+      "project_id": "P3",
+      "epic": "Triage decisioning",
+      "title": "Define symptom urgency and escalation rules",
+      "description": "Define triage rules for GP booking, specialist referral, and urgent care escalation.",
+      "item_type": "task",
+      "required_skills": [
+        "healthcare",
+        "triage",
+        "clinical_decision",
+        "medical_validation"
+      ],
+      "priority_score": 92,
+      "priority": "critical",
+      "story_points": 5,
+      "dependencies": [
+        "P3-BL-001"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Patient Appointment & Triage Assistant requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 1,
+      "phase": "rules",
+      "status": "todo",
+      "sprint_number": 1,
+      "sprint_id": "P3-S1"
+    },
+    {
+      "item_id": "P3-BL-003",
+      "project_id": "P3",
+      "epic": "Symptom intelligence",
+      "title": "Build symptom classification prototype",
+      "description": "Classify symptom descriptions into urgency and care pathway categories for the MVP.",
+      "item_type": "user_story",
+      "required_skills": [
+        "nlp",
+        "machine_learning",
+        "symptom_classification",
+        "healthcare",
+        "python"
+      ],
+      "priority_score": 84,
+      "priority": "high",
+      "story_points": 8,
+      "dependencies": [
+        "P3-BL-002"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Patient Appointment & Triage Assistant requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 2,
+      "phase": "modeling",
+      "status": "todo",
+      "sprint_number": 2,
+      "sprint_id": "P3-S2"
+    },
+    {
+      "item_id": "P3-BL-004",
+      "project_id": "P3",
+      "epic": "Scheduling engine",
+      "title": "Implement scheduling availability backend",
+      "description": "Represent staff availability, slots, and appointment booking constraints.",
+      "item_type": "user_story",
+      "required_skills": [
+        "backend",
+        "api_design",
+        "architecture",
+        "healthcare"
+      ],
+      "priority_score": 74,
+      "priority": "high",
+      "story_points": 8,
+      "dependencies": [
+        "P3-BL-001"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Patient Appointment & Triage Assistant requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 3,
+      "phase": "backend",
+      "status": "todo",
+      "sprint_number": 3,
+      "sprint_id": "P3-S3"
+    },
+    {
+      "item_id": "P3-BL-005",
+      "project_id": "P3",
+      "epic": "Patient experience",
+      "title": "Build patient appointment request flow",
+      "description": "Create the patient-facing flow for appointment requests and symptom collection.",
+      "item_type": "user_story",
+      "required_skills": [
+        "frontend",
+        "ux",
+        "patient_experience",
+        "accessibility",
+        "healthcare"
+      ],
+      "priority_score": 74,
+      "priority": "high",
+      "story_points": 5,
+      "dependencies": [
+        "P3-BL-003"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Patient Appointment & Triage Assistant requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 3,
+      "phase": "frontend",
+      "status": "todo",
+      "sprint_number": 3,
+      "sprint_id": "P3-S3"
+    },
+    {
+      "item_id": "P3-BL-006",
+      "project_id": "P3",
+      "epic": "Staff experience",
+      "title": "Build staff dashboard for review and adjustments",
+      "description": "Allow healthcare staff to review triage decisions and adjust appointments.",
+      "item_type": "user_story",
+      "required_skills": [
+        "frontend",
+        "dashboard",
+        "healthcare",
+        "ux"
+      ],
+      "priority_score": 74,
+      "priority": "high",
+      "story_points": 5,
+      "dependencies": [
+        "P3-BL-003",
+        "P3-BL-004"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Patient Appointment & Triage Assistant requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 3,
+      "phase": "frontend",
+      "status": "todo",
+      "sprint_number": 3,
+      "sprint_id": "P3-S3"
+    },
+    {
+      "item_id": "P3-BL-007",
+      "project_id": "P3",
+      "epic": "Privacy and safety",
+      "title": "Implement GDPR-ready access control and audit trail",
+      "description": "Define access control, privacy checks, and audit trail coverage for sensitive health data.",
+      "item_type": "task",
+      "required_skills": [
+        "security",
+        "compliance",
+        "gdpr",
+        "data_protection",
+        "iam"
+      ],
+      "priority_score": 99,
+      "priority": "critical",
+      "story_points": 5,
+      "dependencies": [
+        "P3-BL-001"
+      ],
+      "acceptance_criteria": [
+        "Output is traceable to Patient Appointment & Triage Assistant requirements.",
+        "Decision rationale can be explained by the Scrum Agent.",
+        "Dependencies are visible before the item is marked ready."
+      ],
+      "sprint_hint": 3,
+      "phase": "security",
+      "status": "todo",
+      "sprint_number": 3,
+      "sprint_id": "P3-S3"
+    }
+  ],
+  "sprint_plans": [
+    {
+      "sprint_id": "P1-S1",
+      "project_id": "P1",
+      "sprint_number": 1,
+      "start_week": 1,
+      "end_week": 2,
+      "focus": "Discovery, rules, compliance, and dependency validation",
+      "goal": "Discovery, rules, compliance, and dependency validation: progress Discovery and compliance, Risk decisioning.",
+      "item_ids": [
+        "P1-BL-001",
+        "P1-BL-002"
+      ],
+      "planned_points": 8,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P1-S2",
+      "project_id": "P1",
+      "sprint_number": 2,
+      "start_week": 3,
+      "end_week": 4,
+      "focus": "Backend, data foundation, and model prototypes",
+      "goal": "Backend, data foundation, and model prototypes: progress Application processing, Risk decisioning, Secure platform foundation.",
+      "item_ids": [
+        "P1-BL-003",
+        "P1-BL-004",
+        "P1-BL-005"
+      ],
+      "planned_points": 21,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P1-S3",
+      "project_id": "P1",
+      "sprint_number": 3,
+      "start_week": 5,
+      "end_week": 6,
+      "focus": "Dashboards, integration contracts, and control workflows",
+      "goal": "Dashboards, integration contracts, and control workflows: progress Compliance and oversight.",
+      "item_ids": [
+        "P1-BL-007"
+      ],
+      "planned_points": 5,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P1-S4",
+      "project_id": "P1",
+      "sprint_number": 4,
+      "start_week": 7,
+      "end_week": 8,
+      "focus": "Operational constraints, overrides, and MVP hardening",
+      "goal": "Operational constraints, overrides, and MVP hardening: progress Loan officer experience.",
+      "item_ids": [
+        "P1-BL-006"
+      ],
+      "planned_points": 5,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P2-S1",
+      "project_id": "P2",
+      "sprint_number": 1,
+      "start_week": 1,
+      "end_week": 2,
+      "focus": "Discovery, rules, compliance, and dependency validation",
+      "goal": "Discovery, rules, compliance, and dependency validation: progress Inventory discovery.",
+      "item_ids": [
+        "P2-BL-001"
+      ],
+      "planned_points": 3,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P2-S2",
+      "project_id": "P2",
+      "sprint_number": 2,
+      "start_week": 3,
+      "end_week": 4,
+      "focus": "Backend, data foundation, and model prototypes",
+      "goal": "Backend, data foundation, and model prototypes: progress Data foundation, Demand intelligence.",
+      "item_ids": [
+        "P2-BL-002",
+        "P2-BL-003"
+      ],
+      "planned_points": 16,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P2-S3",
+      "project_id": "P2",
+      "sprint_number": 3,
+      "start_week": 5,
+      "end_week": 6,
+      "focus": "Dashboards, integration contracts, and control workflows",
+      "goal": "Dashboards, integration contracts, and control workflows: progress Operations dashboard, Replenishment decisions.",
+      "item_ids": [
+        "P2-BL-004",
+        "P2-BL-005"
+      ],
+      "planned_points": 13,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P2-S4",
+      "project_id": "P2",
+      "sprint_number": 4,
+      "start_week": 7,
+      "end_week": 8,
+      "focus": "Operational constraints, overrides, and MVP hardening",
+      "goal": "Operational constraints, overrides, and MVP hardening: progress Operations dashboard, Supply chain constraints.",
+      "item_ids": [
+        "P2-BL-006",
+        "P2-BL-007"
+      ],
+      "planned_points": 10,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P3-S1",
+      "project_id": "P3",
+      "sprint_number": 1,
+      "start_week": 1,
+      "end_week": 2,
+      "focus": "Discovery, rules, compliance, and dependency validation",
+      "goal": "Discovery, rules, compliance, and dependency validation: progress Clinical and privacy discovery, Triage decisioning.",
+      "item_ids": [
+        "P3-BL-001",
+        "P3-BL-002"
+      ],
+      "planned_points": 8,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P3-S2",
+      "project_id": "P3",
+      "sprint_number": 2,
+      "start_week": 3,
+      "end_week": 4,
+      "focus": "Backend, data foundation, and model prototypes",
+      "goal": "Backend, data foundation, and model prototypes: progress Symptom intelligence.",
+      "item_ids": [
+        "P3-BL-003"
+      ],
+      "planned_points": 8,
+      "capacity_points": 24
+    },
+    {
+      "sprint_id": "P3-S3",
+      "project_id": "P3",
+      "sprint_number": 3,
+      "start_week": 5,
+      "end_week": 6,
+      "focus": "Dashboards, integration contracts, and control workflows",
+      "goal": "Dashboards, integration contracts, and control workflows: progress Patient experience, Privacy and safety, Scheduling engine.",
+      "item_ids": [
+        "P3-BL-004",
+        "P3-BL-005",
+        "P3-BL-006",
+        "P3-BL-007"
+      ],
+      "planned_points": 23,
+      "capacity_points": 24
+    }
+  ],
+  "allocations": [
+    {
+      "allocation_id": "ALLOC-001",
+      "item_id": "P1-BL-001",
+      "project_id": "P1",
+      "sprint_id": "P1-S1",
+      "member_id": "teresa-rocha",
+      "member_name": "Teresa Rocha",
+      "role": "Compliance Specialist",
+      "assigned_points": 3,
+      "match_score": 71.5,
+      "matched_skills": [
+        "audit",
+        "compliance"
+      ],
+      "matched_domains": [
+        "fintech"
+      ],
+      "rationale": "Teresa Rocha is assigned because Compliance Specialist matches audit, compliance and has relevant context for fintech.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-002",
+      "item_id": "P3-BL-001",
+      "project_id": "P3",
+      "sprint_id": "P3-S1",
+      "member_id": "ana-costa",
+      "member_name": "Ana Costa",
+      "role": "Healthcare Business Analyst",
+      "assigned_points": 3,
+      "match_score": 75.5,
+      "matched_skills": [
+        "business_analysis",
+        "clinical_workflows",
+        "healthcare"
+      ],
+      "matched_domains": [
+        "healthcare"
+      ],
+      "rationale": "Ana Costa is assigned because Healthcare Business Analyst matches business_analysis, clinical_workflows, healthcare and has relevant context for healthcare.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-003",
+      "item_id": "P1-BL-002",
+      "project_id": "P1",
+      "sprint_id": "P1-S1",
+      "member_id": "tiago-fernandes",
+      "member_name": "Tiago Fernandes",
+      "role": "Data Scientist",
+      "assigned_points": 5,
+      "match_score": 68.5,
+      "matched_skills": [
+        "credit_scoring",
+        "risk_modeling"
+      ],
+      "matched_domains": [
+        "fintech"
+      ],
+      "rationale": "Tiago Fernandes is assigned because Data Scientist matches credit_scoring, risk_modeling and has relevant context for fintech.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-004",
+      "item_id": "P3-BL-002",
+      "project_id": "P3",
+      "sprint_id": "P3-S1",
+      "member_id": "dr-paulo-mendes",
+      "member_name": "Dr. Paulo Mendes",
+      "role": "Healthcare Specialist",
+      "assigned_points": 5,
+      "match_score": 105.0,
+      "matched_skills": [
+        "clinical_decision",
+        "healthcare",
+        "medical_validation",
+        "triage"
+      ],
+      "matched_domains": [
+        "healthcare"
+      ],
+      "rationale": "Dr. Paulo Mendes is assigned because Healthcare Specialist matches clinical_decision, healthcare, medical_validation, triage and has relevant context for healthcare.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-005",
+      "item_id": "P2-BL-001",
+      "project_id": "P2",
+      "sprint_id": "P2-S1",
+      "member_id": "miguel-santos",
+      "member_name": "Miguel Santos",
+      "role": "Business Analyst",
+      "assigned_points": 3,
+      "match_score": 61.0,
+      "matched_skills": [
+        "business_analysis",
+        "requirements"
+      ],
+      "matched_domains": [
+        "retail"
+      ],
+      "rationale": "Miguel Santos is assigned because Business Analyst matches business_analysis, requirements and has relevant context for retail.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-006",
+      "item_id": "P1-BL-003",
+      "project_id": "P1",
+      "sprint_id": "P1-S2",
+      "member_id": "nuno-figueiredo",
+      "member_name": "Nuno Figueiredo",
+      "role": "Security Engineer",
+      "assigned_points": 5,
+      "match_score": 120.0,
+      "matched_skills": [
+        "data_protection",
+        "security"
+      ],
+      "matched_domains": [
+        "fintech"
+      ],
+      "rationale": "Nuno Figueiredo is assigned because Security Engineer matches data_protection, security and has relevant context for fintech.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-007",
+      "item_id": "P3-BL-003",
+      "project_id": "P3",
+      "sprint_id": "P3-S2",
+      "member_id": "luis-teixeira",
+      "member_name": "Luís Teixeira",
+      "role": "Machine Learning Engineer",
+      "assigned_points": 8,
+      "match_score": 91.5,
+      "matched_skills": [
+        "machine_learning",
+        "nlp",
+        "python",
+        "symptom_classification"
+      ],
+      "matched_domains": [
+        "healthcare"
+      ],
+      "rationale": "Luís Teixeira is assigned because Machine Learning Engineer matches machine_learning, nlp, python, symptom_classification and has relevant context for healthcare.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-008",
+      "item_id": "P1-BL-004",
+      "project_id": "P1",
+      "sprint_id": "P1-S2",
+      "member_id": "joao-ferreira",
+      "member_name": "João Ferreira",
+      "role": "Backend Developer",
+      "assigned_points": 8,
+      "match_score": 104.5,
+      "matched_skills": [
+        "api_design",
+        "backend",
+        "oauth2",
+        "security"
+      ],
+      "matched_domains": [
+        "backend",
+        "fintech"
+      ],
+      "rationale": "João Ferreira is assigned because Backend Developer matches api_design, backend, oauth2, security and has relevant context for backend, fintech.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-009",
+      "item_id": "P1-BL-005",
+      "project_id": "P1",
+      "sprint_id": "P1-S2",
+      "member_id": "tiago-fernandes",
+      "member_name": "Tiago Fernandes",
+      "role": "Data Scientist",
+      "assigned_points": 8,
+      "match_score": 78.5,
+      "matched_skills": [
+        "credit_scoring",
+        "data_science",
+        "risk_modeling"
+      ],
+      "matched_domains": [
+        "fintech"
+      ],
+      "rationale": "Tiago Fernandes is assigned because Data Scientist matches credit_scoring, data_science, risk_modeling and has relevant context for fintech.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-010",
+      "item_id": "P2-BL-002",
+      "project_id": "P2",
+      "sprint_id": "P2-S2",
+      "member_id": "marta-carvalho",
+      "member_name": "Marta Carvalho",
+      "role": "Data Engineer",
+      "assigned_points": 8,
+      "match_score": 93.0,
+      "matched_skills": [
+        "data_engineering",
+        "data_quality",
+        "etl",
+        "sql"
+      ],
+      "matched_domains": [
+        "retail"
+      ],
+      "rationale": "Marta Carvalho is assigned because Data Engineer matches data_engineering, data_quality, etl, sql and has relevant context for retail.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-011",
+      "item_id": "P2-BL-003",
+      "project_id": "P2",
+      "sprint_id": "P2-S2",
+      "member_id": "beatriz-gomes",
+      "member_name": "Beatriz Gomes",
+      "role": "Data Scientist",
+      "assigned_points": 8,
+      "match_score": 93.0,
+      "matched_skills": [
+        "data_science",
+        "demand_planning",
+        "forecasting",
+        "time_series"
+      ],
+      "matched_domains": [
+        "retail"
+      ],
+      "rationale": "Beatriz Gomes is assigned because Data Scientist matches data_science, demand_planning, forecasting, time_series and has relevant context for retail.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-012",
+      "item_id": "P3-BL-007",
+      "project_id": "P3",
+      "sprint_id": "P3-S3",
+      "member_id": "teresa-rocha",
+      "member_name": "Teresa Rocha",
+      "role": "Compliance Specialist",
+      "assigned_points": 5,
+      "match_score": 87.5,
+      "matched_skills": [
+        "compliance",
+        "data_protection",
+        "gdpr"
+      ],
+      "matched_domains": [
+        "healthcare"
+      ],
+      "rationale": "Teresa Rocha is assigned because Compliance Specialist matches compliance, data_protection, gdpr and has relevant context for healthcare.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-013",
+      "item_id": "P1-BL-007",
+      "project_id": "P1",
+      "sprint_id": "P1-S3",
+      "member_id": "joao-ferreira",
+      "member_name": "João Ferreira",
+      "role": "Backend Developer",
+      "assigned_points": 5,
+      "match_score": 78.5,
+      "matched_skills": [
+        "backend",
+        "security"
+      ],
+      "matched_domains": [
+        "backend",
+        "fintech"
+      ],
+      "rationale": "João Ferreira is assigned because Backend Developer matches backend, security and has relevant context for backend, fintech.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-014",
+      "item_id": "P3-BL-004",
+      "project_id": "P3",
+      "sprint_id": "P3-S3",
+      "member_id": "dr-paulo-mendes",
+      "member_name": "Dr. Paulo Mendes",
+      "role": "Healthcare Specialist",
+      "assigned_points": 8,
+      "match_score": 51.0,
+      "matched_skills": [
+        "healthcare"
+      ],
+      "matched_domains": [
+        "healthcare"
+      ],
+      "rationale": "Dr. Paulo Mendes is assigned because Healthcare Specialist matches healthcare and has relevant context for healthcare.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-015",
+      "item_id": "P3-BL-005",
+      "project_id": "P3",
+      "sprint_id": "P3-S3",
+      "member_id": "carla-sousa",
+      "member_name": "Carla Sousa",
+      "role": "Frontend Developer",
+      "assigned_points": 5,
+      "match_score": 90.0,
+      "matched_skills": [
+        "accessibility",
+        "frontend",
+        "patient_experience",
+        "ux"
+      ],
+      "matched_domains": [
+        "healthcare"
+      ],
+      "rationale": "Carla Sousa is assigned because Frontend Developer matches accessibility, frontend, patient_experience, ux and has relevant context for healthcare.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-016",
+      "item_id": "P3-BL-006",
+      "project_id": "P3",
+      "sprint_id": "P3-S3",
+      "member_id": "ines-martins",
+      "member_name": "Inês Martins",
+      "role": "Frontend Developer",
+      "assigned_points": 5,
+      "match_score": 65.5,
+      "matched_skills": [
+        "dashboard",
+        "frontend",
+        "ux"
+      ],
+      "matched_domains": [],
+      "rationale": "Inês Martins is assigned because Frontend Developer matches dashboard, frontend, ux and has relevant context for healthcare.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-017",
+      "item_id": "P2-BL-004",
+      "project_id": "P2",
+      "sprint_id": "P2-S3",
+      "member_id": "beatriz-gomes",
+      "member_name": "Beatriz Gomes",
+      "role": "Data Scientist",
+      "assigned_points": 8,
+      "match_score": 77.0,
+      "matched_skills": [
+        "demand_planning",
+        "forecasting",
+        "inventory"
+      ],
+      "matched_domains": [
+        "retail"
+      ],
+      "rationale": "Beatriz Gomes is assigned because Data Scientist matches demand_planning, forecasting, inventory and has relevant context for retail.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-018",
+      "item_id": "P2-BL-005",
+      "project_id": "P2",
+      "sprint_id": "P2-S3",
+      "member_id": "miguel-santos",
+      "member_name": "Miguel Santos",
+      "role": "Business Analyst",
+      "assigned_points": 5,
+      "match_score": 29.0,
+      "matched_skills": [],
+      "matched_domains": [
+        "retail"
+      ],
+      "rationale": "Miguel Santos is assigned because Business Analyst matches adjacent delivery skills and has relevant context for retail.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-019",
+      "item_id": "P1-BL-006",
+      "project_id": "P1",
+      "sprint_id": "P1-S4",
+      "member_id": "ines-martins",
+      "member_name": "Inês Martins",
+      "role": "Frontend Developer",
+      "assigned_points": 5,
+      "match_score": 75.5,
+      "matched_skills": [
+        "dashboard",
+        "data_visualization",
+        "frontend"
+      ],
+      "matched_domains": [
+        "fintech"
+      ],
+      "rationale": "Inês Martins is assigned because Frontend Developer matches dashboard, data_visualization, frontend and has relevant context for fintech.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-020",
+      "item_id": "P2-BL-006",
+      "project_id": "P2",
+      "sprint_id": "P2-S4",
+      "member_id": "rita-marques",
+      "member_name": "Rita Marques",
+      "role": "UX/UI Designer",
+      "assigned_points": 5,
+      "match_score": 53.0,
+      "matched_skills": [
+        "ui_design",
+        "ux"
+      ],
+      "matched_domains": [],
+      "rationale": "Rita Marques is assigned because UX/UI Designer matches ui_design, ux and has relevant context for retail.",
+      "over_capacity": false
+    },
+    {
+      "allocation_id": "ALLOC-021",
+      "item_id": "P2-BL-007",
+      "project_id": "P2",
+      "sprint_id": "P2-S4",
+      "member_id": "miguel-santos",
+      "member_name": "Miguel Santos",
+      "role": "Business Analyst",
+      "assigned_points": 5,
+      "match_score": 61.0,
+      "matched_skills": [
+        "business_analysis",
+        "requirements"
+      ],
+      "matched_domains": [
+        "retail"
+      ],
+      "rationale": "Miguel Santos is assigned because Business Analyst matches business_analysis, requirements and has relevant context for retail.",
+      "over_capacity": false
+    }
+  ],
+  "risks": [
+    {
+      "risk_id": "RISK-P3-DEADLINE",
+      "project_id": "P3",
+      "severity": "critical",
+      "category": "planning",
+      "title": "Patient triage timeline is internally inconsistent",
+      "description": "The project states MVP Delivery in Week 6 and Pilot Launch in Week 3, but milestones run through Week 16 with pilot deployment in Weeks 14-15.",
+      "mitigation": "Run an executive alignment session and reset MVP, pilot, and final delivery definitions.",
+      "owner_suggestion": "Sofia Almeida + Ana Costa + Dr. Paulo Mendes"
+    },
+    {
+      "risk_id": "RISK-P1-COMPLIANCE",
+      "project_id": "P1",
+      "severity": "high",
+      "category": "compliance",
+      "title": "Loan decisions require strong auditability",
+      "description": "Automated approval recommendations must be transparent, traceable, and compliant.",
+      "mitigation": "Prioritize audit logs, override workflow, and compliance validation from Sprint 1.",
+      "owner_suggestion": "Teresa Rocha + Nuno Figueiredo"
+    },
+    {
+      "risk_id": "RISK-P2-DATA",
+      "project_id": "P2",
+      "severity": "high",
+      "category": "data",
+      "title": "Inventory forecasting depends on historical data quality",
+      "description": "Forecasting and recommendations are blocked if sales and inventory history are incomplete.",
+      "mitigation": "Start data profiling and validation before model work; keep a rules-based fallback.",
+      "owner_suggestion": "Marta Carvalho + Beatriz Gomes"
+    },
+    {
+      "risk_id": "RISK-P3-PRIVACY",
+      "project_id": "P3",
+      "severity": "high",
+      "category": "security",
+      "title": "Healthcare triage handles sensitive patient data",
+      "description": "Symptom collection, urgency classification, and scheduling need GDPR-ready controls.",
+      "mitigation": "Treat access control, privacy checks, and audit trails as MVP features.",
+      "owner_suggestion": "Nuno Figueiredo + Teresa Rocha"
+    },
+    {
+      "risk_id": "RISK-LOAD-S2-beatriz-gomes",
+      "project_id": null,
+      "severity": "medium",
+      "category": "capacity",
+      "title": "Beatriz Gomes has tight capacity in S2",
+      "description": "Assigned 8/8 points across 1 project(s).",
+      "mitigation": "Protect focus time and avoid adding unplanned work to this sprint.",
+      "owner_suggestion": "Beatriz Gomes"
+    },
+    {
+      "risk_id": "RISK-LOAD-S2-joao-ferreira",
+      "project_id": null,
+      "severity": "medium",
+      "category": "capacity",
+      "title": "João Ferreira has tight capacity in S2",
+      "description": "Assigned 8/8 points across 1 project(s).",
+      "mitigation": "Protect focus time and avoid adding unplanned work to this sprint.",
+      "owner_suggestion": "João Ferreira"
+    },
+    {
+      "risk_id": "RISK-LOAD-S2-luis-teixeira",
+      "project_id": null,
+      "severity": "medium",
+      "category": "capacity",
+      "title": "Luís Teixeira has tight capacity in S2",
+      "description": "Assigned 8/8 points across 1 project(s).",
+      "mitigation": "Protect focus time and avoid adding unplanned work to this sprint.",
+      "owner_suggestion": "Luís Teixeira"
+    },
+    {
+      "risk_id": "RISK-LOAD-S2-marta-carvalho",
+      "project_id": null,
+      "severity": "medium",
+      "category": "capacity",
+      "title": "Marta Carvalho has tight capacity in S2",
+      "description": "Assigned 8/8 points across 1 project(s).",
+      "mitigation": "Protect focus time and avoid adding unplanned work to this sprint.",
+      "owner_suggestion": "Marta Carvalho"
+    },
+    {
+      "risk_id": "RISK-LOAD-S2-tiago-fernandes",
+      "project_id": null,
+      "severity": "medium",
+      "category": "capacity",
+      "title": "Tiago Fernandes has tight capacity in S2",
+      "description": "Assigned 8/8 points across 1 project(s).",
+      "mitigation": "Protect focus time and avoid adding unplanned work to this sprint.",
+      "owner_suggestion": "Tiago Fernandes"
+    },
+    {
+      "risk_id": "RISK-LOAD-S3-beatriz-gomes",
+      "project_id": null,
+      "severity": "medium",
+      "category": "capacity",
+      "title": "Beatriz Gomes has tight capacity in S3",
+      "description": "Assigned 8/8 points across 1 project(s).",
+      "mitigation": "Protect focus time and avoid adding unplanned work to this sprint.",
+      "owner_suggestion": "Beatriz Gomes"
+    },
+    {
+      "risk_id": "RISK-LOAD-S3-dr-paulo-mendes",
+      "project_id": null,
+      "severity": "medium",
+      "category": "capacity",
+      "title": "Dr. Paulo Mendes has tight capacity in S3",
+      "description": "Assigned 8/8 points across 1 project(s).",
+      "mitigation": "Protect focus time and avoid adding unplanned work to this sprint.",
+      "owner_suggestion": "Dr. Paulo Mendes"
+    },
+    {
+      "risk_id": "RISK-DEP-P1",
+      "project_id": "P1",
+      "severity": "medium",
+      "category": "dependency",
+      "title": "Digital Loan Approval System has dependency-heavy delivery",
+      "description": "6 backlog items depend on earlier rules, data, or backend work.",
+      "mitigation": "Keep dependency owners visible in daily standups and review blocked work first.",
+      "owner_suggestion": "Scrum Master Agent"
+    },
+    {
+      "risk_id": "RISK-DEP-P2",
+      "project_id": "P2",
+      "severity": "medium",
+      "category": "dependency",
+      "title": "Smart Inventory & Replenishment System has dependency-heavy delivery",
+      "description": "6 backlog items depend on earlier rules, data, or backend work.",
+      "mitigation": "Keep dependency owners visible in daily standups and review blocked work first.",
+      "owner_suggestion": "Scrum Master Agent"
+    },
+    {
+      "risk_id": "RISK-DEP-P3",
+      "project_id": "P3",
+      "severity": "medium",
+      "category": "dependency",
+      "title": "Patient Appointment & Triage Assistant has dependency-heavy delivery",
+      "description": "6 backlog items depend on earlier rules, data, or backend work.",
+      "mitigation": "Keep dependency owners visible in daily standups and review blocked work first.",
+      "owner_suggestion": "Scrum Master Agent"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Start with alignment, not coding",
+      "description": "The first sprint should lock rules, data dependencies, and compliance assumptions before backend or model-heavy work accelerates.",
+      "impact": "Reduces rework across all three concurrent projects."
+    },
+    {
+      "title": "Use explainable allocation",
+      "description": "21 backlog items were assigned using skill, domain, seniority, and capacity signals.",
+      "impact": "Makes Scrum Master decisions easy to defend in the technical pitch."
+    },
+    {
+      "title": "Escalate critical planning risk",
+      "description": "1 critical and 3 high risks were detected across 3 projects.",
+      "impact": "Keeps the strategic pitch focused on delivery predictability and risk control."
+    }
+  ],
+  "metadata": {
+    "engine": "deterministic",
+    "capacity_per_member_per_sprint": 8,
+    "sprint_length_weeks": 2,
+    "source_data_dir": "/home/jpborie/Scrum-Agent/Scrum_Data"
+  }
+}
