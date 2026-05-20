@@ -24,3 +24,17 @@ from scrum_agent.services.demo_state import build_demo_state
 state = build_demo_state()
 ```
 
+Optional LLM analysis:
+
+```python
+from scrum_agent.services.agent_orchestrator import build_agent_state
+
+state = build_agent_state(mode="auto")
+```
+
+`build_agent_state()` preserves the deterministic fields from `build_demo_state()` and adds:
+
+- `agent_analysis`
+- `recommendations`
+- `approval_queue`
+- `llm_metadata`

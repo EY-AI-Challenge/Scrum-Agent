@@ -18,6 +18,10 @@ ItemStatus = Literal["todo", "in_progress", "done"]
 RiskSeverity = Literal["critical", "high", "medium", "low"]
 RiskCategory = Literal["planning", "compliance", "data", "security", "capacity", "dependency"]
 SourceStatus = Literal["pdf_loaded", "fallback"]
+LLMProviderName = Literal["null", "ollama", "openai"]
+LLMMode = Literal["offline", "ollama", "openai", "auto"]
+ApprovalStatus = Literal["pending", "approved", "rejected"]
+ApprovalActionType = Literal["change_priority", "reassign_member", "move_sprint", "add_risk", "ask_product_owner"]
 
 
 class ProjectState(TypedDict):
@@ -132,3 +136,50 @@ class DemoState(TypedDict):
     insights: list[InsightState]
     metadata: MetadataState
 
+
+class LLMMetadataState(TypedDict):
+    provider: LLMProviderName
+    model: str
+    mode: LLMMode
+    fallback_used: bool
+    latency_ms: int
+    error: str | None
+
+
+class AgentRecommendationState(TypedDict):
+    recommendation_id: str
+    title: str
+    project_id: ProjectId | None
+    affected_item_ids: list[str]
+    affected_member_ids: list[str]
+    rationale: str
+    expected_impact: str
+    confidence: float
+
+
+class ApprovalActionState(TypedDict):
+    action_id: str
+    action_type: ApprovalActionType
+    project_id: ProjectId | None
+    affected_item_ids: list[str]
+    affected_member_ids: list[str]
+    before: dict[str, str | int | float | bool | None]
+    after: dict[str, str | int | float | bool | None]
+    rationale: str
+    status: ApprovalStatus
+
+
+class AgentAnalysisState(TypedDict):
+    executive_summary: str
+    project_assessments: dict[ProjectId, str]
+    priority_analysis: list[str]
+    allocation_analysis: list[str]
+    risk_analysis: list[str]
+    product_owner_questions: list[str]
+
+
+class AgentState(DemoState):
+    agent_analysis: AgentAnalysisState
+    recommendations: list[AgentRecommendationState]
+    approval_queue: list[ApprovalActionState]
+    llm_metadata: LLMMetadataState

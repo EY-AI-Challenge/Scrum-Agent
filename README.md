@@ -86,6 +86,37 @@ Submit you solution to your specific branch:
   - Frontend solution
   - AI Assistants
 
+## Running the Integrated Scrum Agent
+
+The FastAPI app exposes the agent API and can also serve the built React frontend.
+
+```bash
+python3 -m pip install -r requirements.txt
+cd frontend
+npm install
+npm run build
+cd ..
+uvicorn api.main:app --host 0.0.0.0 --port 8000
+```
+
+Open `http://localhost:8000`.
+
+For frontend development with Vite:
+
+```bash
+uvicorn api.main:app --reload --port 8000
+cd frontend
+npm run dev
+```
+
+The LLM layer is optional. Without Ollama or API keys, the agent falls back to deterministic recommendations and the approval queue. To use local Ollama when it is ready:
+
+```bash
+export SCRUM_AGENT_LLM_PROVIDER=ollama
+export SCRUM_AGENT_LLM_MODEL=llama3.2:3b
+export SCRUM_AGENT_LLM_BASE_URL=http://localhost:11434
+```
+
 ---
 
 ## ⏱️ Time Management & Rules
