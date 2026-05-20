@@ -1,7 +1,9 @@
 from google import genai
 import json
 import os
+import time  # FALTAVA ISTO PARA O RETRY FUNCIONAR!
 from dotenv import load_dotenv
+
 # =====================================================================
 # 🔑 CONFIGURAÇÃO DAS API KEYS DA EQUIPA
 # Substituam pelas chaves geradas em 3 contas Google diferentes
@@ -10,8 +12,28 @@ load_dotenv()
 API_KEY_AGENT_1 = os.getenv("API_KEY_AGENT_1")
 API_KEY_AGENT_2 = os.getenv("API_KEY_AGENT_2")
 API_KEY_AGENT_3 = os.getenv("API_KEY_AGENT_3")
+
 # Configuração partilhada para forçar output em JSON seguro
 shared_config = {'response_mime_type': 'application/json'}
+
+
+def generate_with_retry(client, prompt, max_retries=3):
+    """Tenta chamar a API. Se der erro 503/429, espera e tenta de novo."""
+    for attempt in range(max_retries):
+        try:
+            response = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt,
+                config=shared_config
+            )
+            return json.loads(response.text)
+        except Exception as e:
+            print(f"⚠️ Erro de Rede Detetado (Tentativa {attempt + 1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                time.sleep(5)  # Espera 5 segundos para a API "respirar"
+            else:
+                raise e  # Se falhar 3 vezes seguidas, aí sim dá erro crítico
+            
 
 def agent_1_extractor(project_text):
     """Agente 1: Analisa o PDF e extrai o núcleo de negócio."""
@@ -31,12 +53,8 @@ def agent_1_extractor(project_text):
     Project Text: {project_text}
     """
     
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=prompt,
-        config=shared_config
-    )
-    return json.loads(response.text)
+    # AGORA SIM! Usa a função de Retry
+    return generate_with_retry(client, prompt)
 
 def agent_2_backlog_creator(requirements_json):
     """Agente 2: Transforma requisitos em Epics e Tasks com Story Points."""
@@ -57,12 +75,8 @@ def agent_2_backlog_creator(requirements_json):
     Requirements: {json.dumps(requirements_json)}
     """
     
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=prompt,
-        config=shared_config
-    )
-    return json.loads(response.text)
+    # AGORA SIM! Usa a função de Retry
+    return generate_with_retry(client, prompt)
 
 def agent_3_sprint_planner(backlog_json, team_profiles_text, project_dependencies, human_feedback="", current_plan=""):
     """Agente 3: Planeia cronologicamente e faz match de competências."""
@@ -98,9 +112,5 @@ def agent_3_sprint_planner(backlog_json, team_profiles_text, project_dependencie
     Backlog: {json.dumps(backlog_json)}
     """
     
-    response = client.models.generate_content(
-        model='gemini-2.5-flash',
-        contents=prompt,
-        config=shared_config
-    )
-    return json.loads(response.text)
+    # AGORA SIM! Usa a função de Retry
+    return generate_with_retry(client, prompt)

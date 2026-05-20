@@ -1,0 +1,314 @@
+[
+    {
+        "sprint": "Sprint 1",
+        "epic": "Project Setup & Planning",
+        "task_name": "Stakeholder Alignment & Requirements Validation",
+        "story_points": 5,
+        "assignee": "Sofia Almeida, Miguel Santos",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 1",
+        "epic": "Infrastructure & Security",
+        "task_name": "Cloud Infrastructure Provisioning",
+        "story_points": 8,
+        "assignee": "Hugo Silva",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 1",
+        "epic": "System Integration & APIs",
+        "task_name": "Database Schema Design & Implementation",
+        "story_points": 8,
+        "assignee": "Jo\u00e3o Ferreira, Marta Carvalho",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 1",
+        "epic": "System Integration & APIs",
+        "task_name": "Internal API Design & Development",
+        "story_points": 8,
+        "assignee": "Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 1",
+        "epic": "Infrastructure & Security",
+        "task_name": "Security Best Practices Implementation",
+        "story_points": 8,
+        "assignee": "Nuno Figueiredo, Jo\u00e3o Ferreira, Hugo Silva",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 1",
+        "epic": "System Integration & APIs",
+        "task_name": "Centralized Logging & Monitoring Setup",
+        "story_points": 5,
+        "assignee": "Hugo Silva, Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 2",
+        "epic": "Infrastructure & Security",
+        "task_name": "CI/CD Pipeline Setup",
+        "story_points": 8,
+        "assignee": "Hugo Silva",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 2",
+        "epic": "User Management & Authentication",
+        "task_name": "Customer Registration Module",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, Carla Sousa",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 2",
+        "epic": "User Management & Authentication",
+        "task_name": "User Login Functionality (Customer & Admin)",
+        "story_points": 3,
+        "assignee": "Jo\u00e3o Ferreira, Carla Sousa",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 2",
+        "epic": "User Management & Authentication",
+        "task_name": "Password Management (Forgot/Reset)",
+        "story_points": 3,
+        "assignee": "Jo\u00e3o Ferreira, Carla Sousa",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 2",
+        "epic": "Compliance & Auditing",
+        "task_name": "Audit Trail for User & System Actions",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, Marta Carvalho",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 3",
+        "epic": "Application Submission & Management",
+        "task_name": "Loan Application Form UI",
+        "story_points": 8,
+        "assignee": "Carla Sousa",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 3",
+        "epic": "Application Submission & Management",
+        "task_name": "Submit Application Backend API",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 3",
+        "epic": "Application Submission & Management",
+        "task_name": "Document Upload Functionality",
+        "story_points": 8,
+        "assignee": "Jo\u00e3o Ferreira, In\u00eas Martins",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 3",
+        "epic": "Application Submission & Management",
+        "task_name": "Save Draft Application Feature",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, Carla Sousa",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 3",
+        "epic": "Application Submission & Management",
+        "task_name": "View Application Status (Customer UI)",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, In\u00eas Martins",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 3",
+        "epic": "Notifications & Communication",
+        "task_name": "Email Notification Service Setup",
+        "story_points": 3,
+        "assignee": "Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 4",
+        "epic": "Credit & Risk Assessment Engine",
+        "task_name": "Design Business Rules Engine (BRE)",
+        "story_points": 8,
+        "assignee": "Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 4",
+        "epic": "Credit & Risk Assessment Engine",
+        "task_name": "Integrate Application Data with BRE",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, Marta Carvalho",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 4",
+        "epic": "Credit & Risk Assessment Engine",
+        "task_name": "Develop Credit Scoring Algorithm Logic",
+        "story_points": 8,
+        "assignee": "Tiago Fernandes, Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 4",
+        "epic": "Credit & Risk Assessment Engine",
+        "task_name": "Risk Factor Identification & Flagging",
+        "story_points": 5,
+        "assignee": "Tiago Fernandes, Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 4",
+        "epic": "Decision Workflow & Automation",
+        "task_name": "Automated Approval/Rejection Logic",
+        "story_points": 8,
+        "assignee": "Jo\u00e3o Ferreira, Tiago Fernandes",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 5",
+        "epic": "User Management & Authentication",
+        "task_name": "Role-Based Access Control (RBAC)",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 5",
+        "epic": "Decision Workflow & Automation",
+        "task_name": "Manual Review Queue & Assignment",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 5",
+        "epic": "Admin & Reporting Dashboard",
+        "task_name": "Admin Dashboard UI & Navigation",
+        "story_points": 5,
+        "assignee": "In\u00eas Martins",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 5",
+        "epic": "Admin & Reporting Dashboard",
+        "task_name": "Application List & Search (Admin UI)",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, In\u00eas Martins",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 5",
+        "epic": "Admin & Reporting Dashboard",
+        "task_name": "Detailed Application View (Admin UI)",
+        "story_points": 8,
+        "assignee": "Jo\u00e3o Ferreira, In\u00eas Martins",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 5",
+        "epic": "Decision Workflow & Automation",
+        "task_name": "Manual Decision Input (Admin UI)",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, In\u00eas Martins",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 6",
+        "epic": "Notifications & Communication",
+        "task_name": "Application Submission Confirmation Email",
+        "story_points": 2,
+        "assignee": "Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 6",
+        "epic": "Notifications & Communication",
+        "task_name": "Decision Notification Email (Approval/Rejection)",
+        "story_points": 3,
+        "assignee": "Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 6",
+        "epic": "Decision Workflow & Automation",
+        "task_name": "Decision Recording & History",
+        "story_points": 3,
+        "assignee": "Jo\u00e3o Ferreira, Marta Carvalho",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 6",
+        "epic": "Admin & Reporting Dashboard",
+        "task_name": "Basic Analytics & Metrics Display",
+        "story_points": 8,
+        "assignee": "Jo\u00e3o Ferreira, In\u00eas Martins, Tiago Fernandes",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 6",
+        "epic": "Infrastructure & Security",
+        "task_name": "Data Backup & Recovery Strategy",
+        "story_points": 5,
+        "assignee": "Hugo Silva, Marta Carvalho",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 6",
+        "epic": "Compliance & Auditing",
+        "task_name": "Data Retention Policy Implementation",
+        "story_points": 3,
+        "assignee": "Teresa Rocha, Marta Carvalho, Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 6",
+        "epic": "Compliance & Auditing",
+        "task_name": "Data Privacy Controls (e.g., Anonymization)",
+        "story_points": 5,
+        "assignee": "Nuno Figueiredo, Jo\u00e3o Ferreira, Marta Carvalho",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 7",
+        "epic": "System Integration & APIs",
+        "task_name": "External KYC/Credit Bureau Integration (Placeholder)",
+        "story_points": 13,
+        "assignee": "Miguel Santos, Nuno Figueiredo, Jo\u00e3o Ferreira",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 7",
+        "epic": "Testing & QA",
+        "task_name": "Automated Unit Tests",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, In\u00eas Martins",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 7",
+        "epic": "Testing & QA",
+        "task_name": "Integration Testing",
+        "story_points": 5,
+        "assignee": "Jo\u00e3o Ferreira, In\u00eas Martins",
+        "status": "To Do"
+    },
+    {
+        "sprint": "Sprint 7",
+        "epic": "Testing & QA",
+        "task_name": "User Acceptance Testing (UAT) Preparation",
+        "story_points": 3,
+        "assignee": "Sofia Almeida, Miguel Santos",
+        "status": "To Do"
+    }
+]
