@@ -1,0 +1,22 @@
+{
+  "name": "scrum-agent-backend",
+  "version": "1.0.0",
+  "description": "Express backend for the AI Scrum Agent MVP.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^2.1.1",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
