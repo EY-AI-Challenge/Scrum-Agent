@@ -1,0 +1,14 @@
+# Ambientes Virtuais
+venv/
+env/
+
+# Ficheiros temporarios de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Chaves e Segredos (MUITO IMPORTANTE)
+.env
+
+# Streamlit
+.streamlit/
