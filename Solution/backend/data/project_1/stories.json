@@ -1,0 +1,245 @@
+[
+  {
+    "id": "US-001",
+    "title": "Customer Loan Application Form",
+    "description": "As a customer, I want to submit a personal loan application online so that I can apply for a loan quickly and conveniently.",
+    "acceptance_criteria": [
+      "Form includes all required fields (personal, financial, loan details).",
+      "Input validation for all form fields.",
+      "Confirmation message displayed upon successful submission."
+    ],
+    "story_points": 5,
+    "priority": "high",
+    "assigned_to": "In\u00eas Martins",
+    "sprint_id": "sprint-3",
+    "status": "todo",
+    "tags": [
+      "frontend",
+      "customer-facing",
+      "MVP"
+    ]
+  },
+  {
+    "id": "US-002",
+    "title": "Customer Account Management",
+    "description": "As a customer, I want to create an account and log in securely so that I can manage my applications and track their status.",
+    "acceptance_criteria": [
+      "User registration flow with email verification.",
+      "Secure login functionality for existing users.",
+      "Option to reset password."
+    ],
+    "story_points": 8,
+    "priority": "high",
+    "assigned_to": "Jo\u00e3o Ferreira",
+    "sprint_id": "sprint-2",
+    "status": "todo",
+    "tags": [
+      "authentication",
+      "security",
+      "frontend",
+      "backend"
+    ]
+  },
+  {
+    "id": "US-003",
+    "title": "Automated Credit Risk Scoring",
+    "description": "As the system, I want to automatically assess credit risk using predefined criteria so that I can ensure consistent and objective risk evaluation.",
+    "acceptance_criteria": [
+      "Integrate with a data source (mock/internal) for credit data.",
+      "Apply predefined risk rules/model to generate a credit score.",
+      "Store the calculated credit score with the application."
+    ],
+    "story_points": 8,
+    "priority": "high",
+    "assigned_to": "Tiago Fernandes",
+    "sprint_id": "sprint-3",
+    "status": "todo",
+    "tags": [
+      "data",
+      "backend",
+      "risk-assessment",
+      "ML"
+    ]
+  },
+  {
+    "id": "US-004",
+    "title": "Loan Decision Recommendation Service",
+    "description": "As the system, I want to generate an approval or rejection recommendation based on credit risk and policy so that I can automate initial loan decisioning.",
+    "acceptance_criteria": [
+      "Utilize credit score (from US-003) and loan policy rules.",
+      "Generate a recommendation (Approved, Rejected, Review).",
+      "Store the recommendation alongside the application data."
+    ],
+    "story_points": 5,
+    "priority": "high",
+    "assigned_to": "Jo\u00e3o Ferreira",
+    "sprint_id": "sprint-4",
+    "status": "todo",
+    "tags": [
+      "backend",
+      "decisioning"
+    ]
+  },
+  {
+    "id": "US-005",
+    "title": "Loan Officer Dashboard - Application List",
+    "description": "As a loan officer, I want to view a list of all submitted loan applications with key status indicators so that I can quickly identify applications requiring attention.",
+    "acceptance_criteria": [
+      "Display application ID, customer name, loan amount, status, and recommendation.",
+      "Filter applications by status (e.g., 'Pending Review', 'Approved').",
+      "Sort applications by submission date or status."
+    ],
+    "story_points": 5,
+    "priority": "high",
+    "assigned_to": "Carla Sousa",
+    "sprint_id": "sprint-4",
+    "status": "todo",
+    "tags": [
+      "frontend",
+      "dashboard",
+      "loan-officer"
+    ]
+  },
+  {
+    "id": "US-006",
+    "title": "Loan Officer Dashboard - Application Detail View",
+    "description": "As a loan officer, I want to access detailed information for a specific loan application so that I can make informed decisions or escalate applications.",
+    "acceptance_criteria": [
+      "Display all submitted application data (personal, financial, loan details).",
+      "Show credit risk assessment results and decision recommendation.",
+      "Link from the application list to the detailed view."
+    ],
+    "story_points": 8,
+    "priority": "high",
+    "assigned_to": "Carla Sousa",
+    "sprint_id": "sprint-5",
+    "status": "todo",
+    "tags": [
+      "frontend",
+      "dashboard",
+      "loan-officer"
+    ]
+  },
+  {
+    "id": "US-007",
+    "title": "Real-time Application Status for Customers",
+    "description": "As a customer, I want to view the current status of my submitted loan application so that I can stay informed without needing to contact support.",
+    "acceptance_criteria": [
+      "Display clear application status (e.g., 'Submitted', 'Under Review', 'Approved', 'Rejected').",
+      "Status updates reflect the latest state from the backend.",
+      "Accessible from customer account dashboard."
+    ],
+    "story_points": 3,
+    "priority": "medium",
+    "assigned_to": "In\u00eas Martins",
+    "sprint_id": "sprint-5",
+    "status": "todo",
+    "tags": [
+      "frontend",
+      "customer-facing",
+      "status"
+    ]
+  },
+  {
+    "id": "US-008",
+    "title": "Comprehensive Audit Logging",
+    "description": "As the system, I want to automatically record all significant actions and decisions for audit purposes so that I can meet regulatory compliance and provide traceability.",
+    "acceptance_criteria": [
+      "Log user actions (login, application submission, officer decisions).",
+      "Log system actions (risk assessment execution, recommendation generation).",
+      "Each log entry includes timestamp, user/system ID, action, and outcome."
+    ],
+    "story_points": 8,
+    "priority": "high",
+    "assigned_to": "Jo\u00e3o Ferreira",
+    "sprint_id": "sprint-2",
+    "status": "todo",
+    "tags": [
+      "compliance",
+      "backend",
+      "security",
+      "data"
+    ]
+  },
+  {
+    "id": "US-009",
+    "title": "Secure Application Data Storage",
+    "description": "As the system, I want to securely ingest and store all customer application data so that I can ensure data persistence and availability for processing and review.",
+    "acceptance_criteria": [
+      "Define and implement a database schema for loan applications.",
+      "Ensure data encryption at rest for sensitive customer information.",
+      "Implement APIs for secure data ingestion and retrieval."
+    ],
+    "story_points": 5,
+    "priority": "high",
+    "assigned_to": "Marta Carvalho",
+    "sprint_id": "sprint-2",
+    "status": "todo",
+    "tags": [
+      "data",
+      "backend",
+      "security",
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "US-010",
+    "title": "Loan Officer Manual Decision Override",
+    "description": "As a loan officer, I want to manually approve or reject a loan application so that I can exercise human judgment for complex cases.",
+    "acceptance_criteria": [
+      "Button/action on application detail page to change application status.",
+      "Option to add a mandatory reason for manual override.",
+      "Manual decision is recorded in the audit log (US-008)."
+    ],
+    "story_points": 5,
+    "priority": "medium",
+    "assigned_to": "Carla Sousa",
+    "sprint_id": "sprint-6",
+    "status": "todo",
+    "tags": [
+      "dashboard",
+      "loan-officer",
+      "backend"
+    ]
+  },
+  {
+    "id": "US-011",
+    "title": "Core Infrastructure Setup (Dev/Test)",
+    "description": "As a DevOps Engineer, I want to set up basic development and testing environments so that developers can build and test the system efficiently.",
+    "acceptance_criteria": [
+      "CI/CD pipeline configured for backend and frontend codebases.",
+      "Containerized application components (e.g., Docker for backend service).",
+      "Accessible database instances for development and testing."
+    ],
+    "story_points": 8,
+    "priority": "high",
+    "assigned_to": "Hugo Silva",
+    "sprint_id": "sprint-1",
+    "status": "todo",
+    "tags": [
+      "infrastructure",
+      "devops",
+      "backend"
+    ]
+  },
+  {
+    "id": "US-012",
+    "title": "UX/UI Design for Customer Application Flow",
+    "description": "As a UX/UI Designer, I want to design the user interface and user experience for the online loan application so that it is clear, intuitive, and user-friendly.",
+    "acceptance_criteria": [
+      "Deliver wireframes and high-fidelity mockups for the application forms.",
+      "Create user flow diagrams for the entire application submission process.",
+      "Provide a style guide for customer-facing UI elements."
+    ],
+    "story_points": 5,
+    "priority": "high",
+    "assigned_to": "Rita Marques",
+    "sprint_id": "sprint-1",
+    "status": "todo",
+    "tags": [
+      "ui/ux",
+      "design",
+      "customer-facing"
+    ]
+  }
+]

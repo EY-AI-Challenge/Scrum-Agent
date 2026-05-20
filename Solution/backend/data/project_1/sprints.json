@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sprint-1",
+    "name": "Sprint 1",
+    "goal": "Establish the core technical infrastructure and define the user experience for the customer loan application process.",
+    "duration_weeks": 2,
+    "start_week": 1,
+    "stories": [
+      "US-011",
+      "US-012"
+    ],
+    "capacity_points": 40
+  },
+  {
+    "id": "sprint-2",
+    "name": "Sprint 2",
+    "goal": "Implement robust customer account management, secure application data storage, and comprehensive audit logging for system activities.",
+    "duration_weeks": 2,
+    "start_week": 3,
+    "stories": [
+      "US-002",
+      "US-009",
+      "US-008"
+    ],
+    "capacity_points": 40
+  },
+  {
+    "id": "sprint-3",
+    "name": "Sprint 3",
+    "goal": "Develop the customer-facing loan application form and initiate the backend automated credit risk scoring process.",
+    "duration_weeks": 2,
+    "start_week": 5,
+    "stories": [
+      "US-001",
+      "US-003"
+    ],
+    "capacity_points": 40
+  },
+  {
+    "id": "sprint-4",
+    "name": "Sprint 4",
+    "goal": "Complete the automated loan decision recommendation service and provide loan officers with a basic dashboard to view submitted applications.",
+    "duration_weeks": 2,
+    "start_week": 7,
+    "stories": [
+      "US-004",
+      "US-005"
+    ],
+    "capacity_points": 40
+  },
+  {
+    "id": "sprint-5",
+    "name": "Sprint 5",
+    "goal": "Enhance the Loan Officer Dashboard with detailed application views and provide customers with real-time updates on their application status.",
+    "duration_weeks": 2,
+    "start_week": 9,
+    "stories": [
+      "US-006",
+      "US-007"
+    ],
+    "capacity_points": 40
+  },
+  {
+    "id": "sprint-6",
+    "name": "Sprint 6",
+    "goal": "Implement the final critical feature allowing loan officers to manually override automated loan decisions.",
+    "duration_weeks": 2,
+    "start_week": 11,
+    "stories": [
+      "US-010"
+    ],
+    "capacity_points": 40
+  }
+]
